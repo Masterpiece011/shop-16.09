@@ -3,6 +3,8 @@
     --light-pink: #F1E4E6;
     --dark-pink: #F16D7F;
     --sales-bkg-color: #4f4241;
+    --sales-text-color: #ffffff;
+    --catalog-list-bkg: #F8F8F8;
 }
 
 
@@ -106,12 +108,126 @@ body {
     width: 360px;
     min-height: 260px;
     background-color: var(--sales-bkg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* .sales__item--woman {
+.sales__item-margin {
+    margin: 0 0 30px 0;
+}
 
-} */
+.sales__item-text {
+    color: var(--sales-text-color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.sales__item-title {
+    color: var(--dark-pink);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.sales__item--woman {
+    background-image: url(../img/sales-woman-bkg.jpg);
+}
+
+.sales__item--man {
+    background-image: url(../img/sales-man-bkg.jpg);
+}
+
+.sales__item--kids {
+    background-image: url(../img/sales-kids-bkg.jpg);
+}
+
+.sales__item--shoes {
+    background-image: url(../img/sales-shoes-bkg.jpg);
+}
 
 .sales__item--shoes {
     width: 100%;
+}
+
+.catalog {
+    margin: 97px 0 95px 0;
+}
+
+.catalog__wrp {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.catalog__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 6px 0;
+}
+
+.catalog__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0 0 48px;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catalog__item {
+    width: 360px;
+    min-height: 581px;
+    background-color: var(--catalog-list-bkg);
+    box-sizing: border-box;
+}
+
+.catalog__item-margin {
+    margin-bottom: 30px;
+}
+
+.catalog__item-title {
+    text-transform: uppercase;
+    padding: 25px 0 0 18px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.catalog__item-text {
+    padding: 12px 0 18px 18px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.catalog__text-price {
+    padding: 0 0 20px 18px;
+    color: var(--dark-pink);
+}
+
+.catalog__button {
+    align-self: center;
+    display: inline-block;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: var(--dark-pink);
+    border-color: var(--dark-pink);
+    padding: 15px 39px;
+    margin: 64px 0 0 0;
 }
