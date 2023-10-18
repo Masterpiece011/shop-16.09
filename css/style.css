@@ -138,6 +138,8 @@ body {
 
 .sales__item--woman {
     background-image: url(../img/sales-woman-bkg.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .sales__item--man {
@@ -232,6 +234,7 @@ body {
     border-color: var(--dark-pink);
     padding: 15px 39px;
     margin: 64px 0 0 0;
+    border-style: double
 }
 
 .service {
@@ -348,10 +351,33 @@ body {
 
 .footer__copy-item {
     margin: 0 8px 0 0;
+}
+
+.footer__copy-item-link {
     background-color: var(--sales-text-color);
     color: var(--black);
     box-sizing: border-box;
     padding: 8px 10px;
+    fill: var(--black);
+}
+
+.footer__copy-item-link:focus,
+.footer__copy-item-link:hover {
+    background-color: var(--dark-pink);
+    color: var(--sales-text-color);
+}
+
+.footer__copy-item-link:hover .footer__copy-item-img {
+    fill: var(--catalog-list-bkg);
+}
+
+.footer__copy-item-img {
+    fill: var(--black);
+}
+
+.footer__copy-item-img:hover,
+.footer__copy-item-img:focus {
+    fill: var(--sales-text-color);
 }
 
 .footer__info-form {
@@ -391,6 +417,7 @@ body {
     width: 323px;
     min-height: 49px;
     padding: 7px 0 7px 22px;
+    border: none;
 }
 
 .footer__form-button {
@@ -404,4 +431,5 @@ body {
     font-weight: 400;
     line-height: 17px;
     text-align: center;
+    border: none;
 }
