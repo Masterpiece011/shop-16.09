@@ -1,0 +1,113 @@
+.catalog {
+    margin: 97px 0 95px 0;
+
+    .catalog__wrp {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .catalog__header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .catalog__title {
+        font-size: 30px;
+        line-height: 36px;
+        margin: 0 0 6px 0;
+    }
+
+    .catalog__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin: 0 0 48px;
+    }
+
+    .catalog__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .catalog__item {
+        width: 360px;
+        min-height: 581px;
+        background-color: $catalog-list-bkg;
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .catalog__item-margin {
+        margin-bottom: 30px;
+    }
+
+    .catalog__item-title {
+        text-transform: uppercase;
+        padding: 25px 0 0 18px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .catalog__item-text {
+        padding: 12px 0 18px 18px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+
+    .catalog__text-price {
+        padding: 0 0 20px 18px;
+        color: $dark-pink;
+    }
+
+    .catalog__button {
+        align-self: center;
+        display: inline-block;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $dark-pink;
+        border-color: $dark-pink;
+        padding: 15px 39px;
+        margin: 64px 0 0 0;
+        border-style: double;
+    }
+
+    .catalog__item-img-margin {
+        margin: 0 4px 0 0;
+        fill: $service-item-text-color;
+    }
+
+    .catalog__item-button {
+        display: none;
+    }
+
+    .catalog__item-button-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog__item:hover .catalog__item-img {}
+
+    .catalog__item:hover .catalog__item-button {
+        display: inline-block;
+        background-color: transparent;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $sales-text-color;
+        border-color: $sales-text-color;
+        padding: 11px 13px;
+        border-style: double;
+        position: absolute;
+        background-color: transparent;
+        top: 188px;
+        right: 99px;
+    }
+}

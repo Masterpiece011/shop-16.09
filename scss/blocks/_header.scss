@@ -1,0 +1,32 @@
+.header {
+    background-color: $black;
+
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        min-height: 75px;
+        align-items: center;
+    }
+
+    .header__list {
+        display: flex;
+    }
+
+    .header__logo {
+        margin: 0 41px 0 0;
+    }
+
+    .header__link {
+        margin: 0 0 0 34px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

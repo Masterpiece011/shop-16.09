@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./script.js">
 </head>
 
 <body>
@@ -23,7 +22,7 @@
             </div>
             <ul class="header__list">
                 <li class="header__item">
-                    <button class="header__button" id="burger">
+                    <button class="header__button" type="button">
                         <img src="./img/burger-ico.svg" alt="burger-ico">
                     </button>
                 </li>
@@ -38,7 +37,7 @@
                     </a>
                 </li>
             </ul>
-            <nav class="header__nav" id="menu">
+            <nav class="header__nav">
                 <h2 class="header__title">menu</h2>
                 <ul class="header__nav-list">
                     <li class="header__nav-item nav-sub-item">
@@ -106,41 +105,11 @@
         </div>
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__img" src="./img/man.jpg" alt="man">
-            <div class="brand__title-wrp">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                            class="brand__subtitle-pink">fashion</span></span></h1>
-            </div>
-        </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="visually-hidden">sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item--woman sales__item-margin">
-                        <p class="sales__item-text">30% off</p>
-                        <h3 class="sales__item-title">for women</h3>
-                    </li>
-                    <li class="sales__item sales__item--man sales__item-margin">
-                        <p class="sales__item-text">hot deal</p>
-                        <h3 class="sales__item-title">for men</h3>
-                    </li>
-                    <li class="sales__item sales__item--kids sales__item-margin">
-                        <p class="sales__item-text">new arrivals</p>
-                        <h3 class="sales__item-title">for kids</h3>
-                    </li>
-                    <li class="sales__item sales__item--shoes">
-                        <p class="sales__item-text">luxirous & trendy</p>
-                        <h3 class="sales__item-title">accesories</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
         <section class="catalog">
             <div class="container catalog__wrp">
                 <div class="catalog__header">
-                    <h2 class="catalog__title">Fetured Items</h2>
-                    <p class="catalog__text">Shop for items based on what we featured in this week</p>
+                    <h2 class="catalog__title visually-hidden">Fetured Items</h2>
+                    <p class="catalog__text visually-hidden">Shop for items based on what we featured in this week</p>
                 </div>
                 <ul class="catalog__list">
                     <li class="catalog__item catalog__item-margin">
@@ -165,7 +134,7 @@
                             <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
                                     src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
                         </button>
-                        <img class="catalog__item-img" src="./img/product-2.jpg" alt="product-2">
+                        <img class="catalog__item-img" src="./img/product-7.jpg" alt="product-7">
                         <h3 class="catalog__item-title">ellery x m'o capsule</h3>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -179,7 +148,7 @@
                             <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
                                     src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
                         </button>
-                        <img class="catalog__item-img" src="./img/product-3.jpg" alt="product-3">
+                        <img class="catalog__item-img" src="./img/product-8.jpg" alt="product-8">
                         <h3 class="catalog__item-title">ellery x m'o capsule</h3>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -207,7 +176,7 @@
                             <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
                                     src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
                         </button>
-                        <img class="catalog__item-img" src="./img/product-5.jpg" alt="product-5">
+                        <img class="catalog__item-img" src="./img/product-9.jpg" alt="product-9">
                         <h3 class="catalog__item-title">ellery x m'o capsule</h3>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -221,7 +190,49 @@
                             <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
                                     src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
                         </button>
-                        <img class="catalog__item-img" src="./img/product-6.jpg" alt="product-6">
+                        <img class="catalog__item-img" src="./img/product-10.jpg" alt="product-10">
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__text-price">$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <button class="catalog__item-button" type="button">
+                            <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
+                                    src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
+                        </button>
+                        <img class="catalog__item-img" src="./img/product-11.jpg" alt="product-11">
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__text-price">$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <button class="catalog__item-button" type="button">
+                            <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
+                                    src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
+                        </button>
+                        <img class="catalog__item-img" src="./img/product-12.jpg" alt="product-12">
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__text-price">$52.00</p>
+                    </li>
+                    <li class="catalog__item">
+                        <button class="catalog__item-button" type="button">
+                            <div class="catalog__item-button-text"> <img class="catalog__item-img-margin"
+                                    src="./img/basket-ico.svg" alt="icon">Add to Cart </div>
+                        </button>
+                        <img class="catalog__item-img" src="./img/product-13.jpg" alt="product-13">
                         <h3 class="catalog__item-title">ellery x m'o capsule</h3>
                         <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
                             Australian
@@ -231,7 +242,6 @@
                         <p class="catalog__text-price">$52.00</p>
                     </li>
                 </ul>
-                <button class="catalog__button">Browse All Product</button>
             </div>
         </section>
         <section class="service">
@@ -352,7 +362,4 @@
         </div>
 
     </footer>
-
 </body>
-
-</html>

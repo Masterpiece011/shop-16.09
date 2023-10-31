@@ -1,0 +1,158 @@
+.footer__info {
+    background-image: url(../img/footer-bkg.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .footer__info-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__info-person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 97px 0 126px 0;
+    }
+
+    .footer__info-text {
+        width: 360px;
+        min-height: 100px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+
+
+
+    }
+
+    .footer__info-text-italic {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .footer__info-img {
+        margin: 0 0 30px 0;
+        width: 96px;
+        height: 96px;
+    }
+}
+
+
+
+.footer__copy {
+    background-color: $black;
+
+    .footer__copy-wrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .footer__copy-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $sales-text-color;
+    }
+
+    .footer__copy-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__copy-item {
+        margin: 0 8px 0 0;
+    }
+
+    .footer__copy-item-link {
+        background-color: $sales-text-color;
+        color: $black;
+        box-sizing: border-box;
+        padding: 8px 10px;
+        fill: $black;
+    }
+
+    .footer__copy-item-link:focus,
+    .footer__copy-item-link:hover {
+        background-color: $dark-pink;
+        color: $sales-text-color;
+    }
+
+    .footer__copy-item-link:hover .footer__copy-item-img {
+        fill: $catalog-list-bkg;
+    }
+
+    .footer__copy-item-img {
+        fill: $black;
+    }
+
+    .footer__copy-item-img:hover,
+    .footer__copy-item-img:focus {
+        fill: $sales-text-color;
+    }
+}
+
+
+
+.footer__info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0 156px 0;
+
+    .footer__form-title {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .footer__form-text {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    .form__field {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__form-email {
+        border-radius: 25px 0 0 25px;
+        box-sizing: border-box;
+        background-color: $form-bgk;
+        border-color: $form-bgk;
+        width: 323px;
+        min-height: 49px;
+        padding: 7px 0 7px 22px;
+        border: none;
+    }
+
+    .footer__form-button {
+        border-radius: 0 25px 25px 0;
+        box-sizing: border-box;
+        background-color: $dark-pink;
+        border-color: $dark-pink;
+        padding: 7px 8px;
+        color: $sales-text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        border: none;
+    }
+}
