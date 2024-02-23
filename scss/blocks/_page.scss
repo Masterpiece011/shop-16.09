@@ -1,0 +1,14 @@
+.page {
+    background-color: $page-color-bkg;
+
+    .page__title {
+        text-transform: uppercase;
+        color: $dark-pink;
+        padding: 60px 0;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+
+    }
+}

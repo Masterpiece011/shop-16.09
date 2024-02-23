@@ -1,6 +1,17 @@
 .brand {
     display: flex;
     margin: 0 0 62px 0;
+    position: relative;
+
+    @include tablet {
+        margin-bottom: 20px;
+    }
+
+    @include mobile {
+        width: 375px;
+        min-height: 363px;
+        margin-bottom: 64px;
+    }
 
     .brand__title-wrp {
         flex-grow: 1;
@@ -8,6 +19,16 @@
         display: flex;
         align-items: center;
         background-color: $light-pink;
+        position: relative;
+    }
+
+    .barnd__item {
+        position: absolute;
+        width: 12px;
+        height: 92px;
+        top: 337px;
+        right: 1025px;
+        background-color: $dark-pink;
     }
 
     .brand__title {
@@ -28,5 +49,34 @@
 
     .brand__subtitle-pink {
         color: $dark-pink;
+    }
+
+    @media (max-width: $desktop-width) {
+        .brand__img {
+            width: 384.79px;
+        }
+
+        .brand__title {
+            font-size: 24px;
+        }
+
+        .brand__subtitle {
+            font-size: 24px;
+        }
+
+    }
+
+    @media (max-width: $tablet-width) {
+        .brand {
+            display: none;
+            width: 375px;
+            min-height: 363px;
+
+        }
+
+        .brand__img {
+            display: none;
+        }
+
     }
 }

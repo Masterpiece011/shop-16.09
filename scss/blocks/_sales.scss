@@ -3,6 +3,11 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @include mobile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .sales__item {
         padding: 20px;
         box-sizing: border-box;
@@ -13,6 +18,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+
     }
 
     .sales__item-margin {
@@ -53,9 +60,48 @@
         background-image: url(../img/sales-shoes-bkg.jpg);
         background-repeat: no-repeat;
         min-height: 180px;
+
+        @include mobile {
+            height: 111px;
+        }
     }
 
     .sales__item--shoes {
         width: 100%;
+    }
+
+    @media (max-width: $desktop-width) {
+        .sales__item {
+            width: 232.09px;
+            min-height: 167.62px;
+            background-size: cover;
+        }
+
+        .sales__item--shoes {
+            width: 100%;
+        }
+
+        .sales__item-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+        }
+
+        // .sales__item-title {
+        //     font-size: 16px;
+        // }
+    }
+
+    @media (max-width: $tablet-width) {
+        .sales__item {
+            width: 343px;
+            height: 247px;
+            flex-grow: 1;
+        }
+
+        .sales__item--shoes {
+            height: 11px;
+        }
     }
 }

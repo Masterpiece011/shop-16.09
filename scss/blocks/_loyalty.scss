@@ -1,0 +1,35 @@
+.loyalty {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    max-width: 652px;
+
+    .loyalty__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+
+    .loyalty__text {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        text-align: left;
+        margin-bottom: 21px;
+    }
+
+    .loyalty__item {
+        margin-bottom: 16px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .loyalty__item-check-mark {
+        margin-right: 23px;
+    }
+}

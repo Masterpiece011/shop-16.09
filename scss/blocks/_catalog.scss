@@ -1,6 +1,14 @@
 .catalog {
     margin: 97px 0 95px 0;
 
+    @include tablet {
+        margin: 155px 0 64px 0;
+    }
+
+    @include mobile {
+        margin: 64px 0 96px 0;
+    }
+
     .catalog__wrp {
         display: flex;
         flex-direction: column;
@@ -30,6 +38,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
     }
 
     .catalog__item {
@@ -38,11 +47,12 @@
         background-color: $catalog-list-bkg;
         box-sizing: border-box;
         position: relative;
-    }
-
-    .catalog__item-margin {
         margin-bottom: 30px;
     }
+
+    // .catalog__item-margin {
+    //     margin-bottom: 30px;
+    // }
 
     .catalog__item-title {
         text-transform: uppercase;
@@ -75,6 +85,7 @@
         padding: 15px 39px;
         margin: 64px 0 0 0;
         border-style: double;
+        cursor: pointer;
     }
 
     .catalog__item-img-margin {
@@ -82,20 +93,11 @@
         fill: $service-item-text-color;
     }
 
+    .catalog__item-wrp {
+        position: relative;
+    }
+
     .catalog__item-button {
-        display: none;
-    }
-
-    .catalog__item-button-text {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .catalog__item:hover .catalog__item-img {}
-
-    .catalog__item:hover .catalog__item-button {
         display: inline-block;
         background-color: transparent;
         font-size: 16px;
@@ -109,5 +111,48 @@
         background-color: transparent;
         top: 188px;
         right: 99px;
+        cursor: pointer;
+    }
+
+    .catalog__item-button-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog__item-img {
+        width: 100%;
+        min-height: 420px;
+    }
+
+    .catalog__item-overlay {
+        width: 100%;
+        min-height: 420px;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+    }
+
+    .catalog__item-overlay,
+    .catalog__item-button {
+        display: none;
+    }
+
+    .catalog__item:hover .catalog__item-button,
+    .catalog__item:hover .catalog__item-overlay {
+        display: block;
+    }
+
+    .catalog__item-margin-adaptive {
+        @include mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media (max-width: $tablet-width) {
+        .catalog__item {
+            margin-bottom: 15px;
+        }
     }
 }
