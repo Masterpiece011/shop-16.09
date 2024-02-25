@@ -88,6 +88,13 @@
         cursor: pointer;
     }
 
+    .catalog__button:hover {
+        background-color: $dark-pink;
+        color: $catalog-list-bkg;
+        border-color: $dark-pink;
+        transition: .4s;
+    }
+
     .catalog__item-img-margin {
         margin: 0 4px 0 0;
         fill: $service-item-text-color;
@@ -132,6 +139,7 @@
         background: rgba(0, 0, 0, 0.6);
         position: absolute;
         top: 0;
+
     }
 
     .catalog__item-overlay,

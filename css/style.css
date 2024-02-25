@@ -137,7 +137,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  color: var(--black);
+  color: var(#222222);
 }
 
 .container {
@@ -394,6 +394,12 @@ body {
   margin: 64px 0 0 0;
   border-style: double;
   cursor: pointer;
+}
+.catalog .catalog__button:hover {
+  background-color: #F16D7F;
+  color: #F8F8F8;
+  border-color: #F16D7F;
+  transition: 0.4s;
 }
 .catalog .catalog__item-img-margin {
   margin: 0 4px 0 0;
@@ -666,6 +672,8 @@ body {
   min-height: 49px;
   padding: 7px 0 7px 22px;
   border: none;
+  outline: none;
+  color: #222222;
 }
 @media (max-width: 767px) {
   .footer__info .footer__form-email {
@@ -742,6 +750,7 @@ body {
 .footer__copy .footer__copy-item-link:hover {
   background-color: #F16D7F;
   color: #ffffff;
+  transition: all 0.4s;
 }
 .footer__copy .footer__copy-item-link:hover .footer__copy-item-img {
   fill: #F8F8F8;

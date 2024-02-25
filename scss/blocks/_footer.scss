@@ -82,6 +82,8 @@
         min-height: 49px;
         padding: 7px 0 7px 22px;
         border: none;
+        outline: none;
+        color: $black;
 
         @include mobile {
             width: 245px;
@@ -168,6 +170,7 @@
     .footer__copy-item-link:hover {
         background-color: $dark-pink;
         color: $sales-text-color;
+        transition: all .4s;
     }
 
     .footer__copy-item-link:hover .footer__copy-item-img {
